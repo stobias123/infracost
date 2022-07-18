@@ -12,9 +12,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/output"
-	"github.com/infracost/infracost/internal/ui"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/output"
+	"github.com/infracost/infracost/api/ui"
 )
 
 func commentCmd(ctx *config.RunContext) *cobra.Command {

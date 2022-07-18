@@ -15,13 +15,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/infracost/infracost/internal/apiclient"
-	"github.com/infracost/infracost/internal/clierror"
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/logging"
-	"github.com/infracost/infracost/internal/ui"
-	"github.com/infracost/infracost/internal/update"
-	"github.com/infracost/infracost/internal/version"
+	"github.com/infracost/infracost/api/apiclient"
+	"github.com/infracost/infracost/api/clierror"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/logging"
+	"github.com/infracost/infracost/api/ui"
+	"github.com/infracost/infracost/api/update"
+	"github.com/infracost/infracost/api/version"
 )
 
 func init() {

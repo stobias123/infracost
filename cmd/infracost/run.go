@@ -20,18 +20,18 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/infracost/infracost/internal/logging"
+	"github.com/infracost/infracost/api/logging"
 
-	"github.com/infracost/infracost/internal/apiclient"
-	"github.com/infracost/infracost/internal/clierror"
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/output"
-	"github.com/infracost/infracost/internal/prices"
-	"github.com/infracost/infracost/internal/providers"
-	"github.com/infracost/infracost/internal/providers/terraform"
-	"github.com/infracost/infracost/internal/schema"
-	"github.com/infracost/infracost/internal/ui"
-	"github.com/infracost/infracost/internal/usage"
+	"github.com/infracost/infracost/api/apiclient"
+	"github.com/infracost/infracost/api/clierror"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/output"
+	"github.com/infracost/infracost/api/prices"
+	"github.com/infracost/infracost/api/providers"
+	"github.com/infracost/infracost/api/providers/terraform"
+	"github.com/infracost/infracost/api/schema"
+	"github.com/infracost/infracost/api/ui"
+	"github.com/infracost/infracost/api/usage"
 )
 
 type projectJob struct {
@@ -147,7 +147,7 @@ func runMain(cmd *cobra.Command, runCtx *config.RunContext) error {
 
 	r.RunID, r.ShareURL = result.RunID, result.ShareURL
 
-	format := strings.ToLower(runCtx.Config.Format)
+	format := strings.ToLower("json")
 	isCompareRun := runCtx.Config.CompareTo != ""
 	if isCompareRun && !validCompareToFormats[format] {
 		return errors.New("The --compare-to option cannot be used with table and html formats as they output breakdowns, specify a different --format.")

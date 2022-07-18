@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	main "github.com/infracost/infracost/cmd/infracost"
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/testutil"
 )
 
 var (

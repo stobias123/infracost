@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/testutil"
 )
 
 func TestBreakdownHelp(t *testing.T) {

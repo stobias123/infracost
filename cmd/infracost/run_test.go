@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	main "github.com/infracost/infracost/cmd/infracost"
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/output"
-	"github.com/infracost/infracost/internal/schema"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/config"
+	"github.com/infracost/infracost/api/output"
+	"github.com/infracost/infracost/api/schema"
+	"github.com/infracost/infracost/api/testutil"
 )
 
 func TestFlagErrorsNoPath(t *testing.T) {

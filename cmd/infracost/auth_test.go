@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/testutil"
 	"testing"
 )
 

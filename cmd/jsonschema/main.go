@@ -7,7 +7,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/alecthomas/jsonschema"
-	"github.com/infracost/infracost/internal/output"
+	"github.com/infracost/infracost/api/output"
 	"github.com/shopspring/decimal"
 	"os"
 	"reflect"

@@ -3,7 +3,7 @@ package main_test
 import (
 	"testing"
 
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/testutil"
 )
 
 func TestCommentAzureReposHelp(t *testing.T) {

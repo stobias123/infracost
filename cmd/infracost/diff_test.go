@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/api/testutil"
 )
 
 func TestDiffHelp(t *testing.T) {
